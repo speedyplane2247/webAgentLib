@@ -19,3 +19,6 @@ webAgentInfo.supportsKHTML = 0
 webAgentInfo.browserMain = ""
 webAgentInfo.Safari = 0
 webAgentInfo.SafariVer = ""
+webAgentInfo.isOSX = 0 // not is it macOS, is it OSX-like
+webAgentInfo.isiOSMobile = 0
+webAgentInfo.iOSMobileBuild = ""
