@@ -27,12 +27,19 @@ webAgentInfo.iOSMobileBuild = ""
 webAgentInfo.stringParse = function () {
 if (webAgentLib.currentAgent.includes("Mozilla/")) {
 webAgentInfo.isStandard = 1
+webAgentInfo.Mozilla = 1
+webAgentInfo.MozillaVer = webAgentLib.currentAgent.charAt(9)
 }
+if (webAgentLib.currentAgent.includes("Mac OS X") && webAgentLib.currentAgain.includes("like") == false) {
+    webAgentInfo.OS = "macOS"
+    }
+    if (webAgentLib.currentAgent.includes("Mac OS X") && webAgentLib.currentAgain.includes("like") == true) {
+        webAgentInfo.OS = "iOS"
+        }
+            
 }
 // DEFINE STRING CHECKER FUNCTIONS
 // EXAMPLE USER AGENTS
 /*
-
 Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1
-
 */
