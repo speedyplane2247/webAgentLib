@@ -8,6 +8,7 @@ var webAgentInfo = new Object();
 webAgentLib.ver = "v0.9"
 webAgentLib.currentAgent = navigator.userAgent
 // DEFINE INFO VARS (BLANK)
+webAgentInfo.isStandard = 0
 webAgentInfo.Mozilla = 0
 webAgentInfo.MozillaVer = 0
 webAgentInfo.OS = ""
@@ -23,4 +24,15 @@ webAgentInfo.isOSX = 0 // not is it macOS, is it OSX-like
 webAgentInfo.isiOSMobile = 0
 webAgentInfo.iOSMobileBuild = ""
 // DEFINE STRING PARSE FUNCTIONS
+webAgentInfo.stringParse = function () {
+if (webAgentLib.currentAgent.includes("Mozilla/")) {
+webAgentInfo.isStandard = 1
+}
+}
 // DEFINE STRING CHECKER FUNCTIONS
+// EXAMPLE USER AGENTS
+/*
+
+Mozilla/5.0 (iPhone; CPU iPhone OS 11_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.0 Mobile/15E148 Safari/604.1
+
+*/
