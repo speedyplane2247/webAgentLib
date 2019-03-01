@@ -22,3 +22,5 @@ webAgentInfo.SafariVer = ""
 webAgentInfo.isOSX = 0 // not is it macOS, is it OSX-like
 webAgentInfo.isiOSMobile = 0
 webAgentInfo.iOSMobileBuild = ""
+// DEFINE STRING PARSE FUNCTIONS
+// DEFINE STRING CHECKER FUNCTIONS
